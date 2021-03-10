@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# This application is available and published here: https://moveit-c8ln5umrk-lucasggmc.vercel.app/
+### This application is available and published here: https://moveit-c8ln5umrk-lucasggmc.vercel.app/
 
 ## Getting Started
 
