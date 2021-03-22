@@ -22,34 +22,35 @@ export default function Home(props: HomeProps) {
   //aqui é tudo executado no client
   console.log(props);
 
-  return (
-    <ChallengesProvider
-    level={props.level}
-    currentExperience={props.currentExperience}
-    challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container}>    
-        <Head>
-          <title>Início | move.it </title>
-        </Head>  
-        <ExperienceBar />
+  return (    
+      <ChallengesProvider
+      level={props.level}
+      currentExperience={props.currentExperience}
+      challengesCompleted={props.challengesCompleted}
+      >
+        <div className={styles.container}>    
+          <Head>
+            <title>Início | move.it </title>
+          </Head>  
+          <ExperienceBar />
 
-        <CountdownProvider>
-          <section>
-            <div className="">
-              <Profile />
-              <CompletedChallenges />
-              <CountDown />
-            </div>
+          <CountdownProvider>
+            <section>
+              <div className="">
+                <Profile />
+                <CompletedChallenges />
+                <CountDown />
+              </div>
 
-            <div>
-            <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
+              <div>
+              <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
 
-      </div>
-    </ChallengesProvider>
+        </div>
+      </ChallengesProvider>
+    
   )
 }
 

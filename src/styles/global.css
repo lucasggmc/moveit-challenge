@@ -17,7 +17,7 @@
     --title: #2e384d;
     --red: #e83f5b;
     --green: #4cd62b;
-    --blue: #5965e0;
+    --blue: #5965e0;    
     --blue-twitter: #2aa9e0;
     --blue-dark: rgb(48, 46, 46);
 }
@@ -32,6 +32,12 @@
 @media(max-width: 720px){
     html{
         font-size: 87.5%;
+    }
+}
+
+@media(max-width: 480px){
+    html{
+        font-size: 68.75%;
     }
 }
 
