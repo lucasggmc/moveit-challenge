@@ -18,20 +18,31 @@
 }
 
 .backgroundImage{
-    /* width: 768px; */
-    width: 48rem;
-    /* height: 660px; */
-    height: 40.6rem;
+    width: 768px; 
+    height: 660px;
+    /* height: 40.6rem; */
 
     margin-top: 80px;
     margin-left: -68px;
 }
 
+@media(max-width: 1250px){
+    .backgroundImage{
+        width: 648px;
+        /* height: 500px; */
+        height: 510px;
+    
+        margin-top: 80px;
+        margin-left: -68px;
+        }
+
+}
+
 @media(max-width: 1080px){    
     .backgroundImage{
-    width: 28rem;
+    width: 448px;
     /* height: 500px; */
-    height: 25.6rem;
+    height: 410px;
 
     margin-top: 80px;
     margin-left: -68px;
@@ -39,7 +50,8 @@
 
     .cardLogin > img:first-child {
         margin-bottom: 8rem;
-        width: 20rem;
+        /* width: 20rem; */
+        width: 320px;
     }
 
     .inputArea{
@@ -87,6 +99,7 @@
 }
 
 
+
 .card {
     /* position: absolute; */
     /* width: 360px; */
@@ -109,7 +122,8 @@
 }
 
 .cardLogin > img:first-child {
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
+    margin-bottom: 128px;
 }
 
 /* bem vindo */
@@ -138,7 +152,7 @@
     font-size: 1.1rem;    
     color: #B3B9FF;    
     position: absolute;
-    padding-left: 3.5rem;
+    padding-left: 55px;
     /* margin-top: 1rem; */
 }
 
@@ -196,6 +210,10 @@
     border: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.inputArea > a:hover {
+    background: #414AA3;
 }
 
 /* .inputArea > a {    
