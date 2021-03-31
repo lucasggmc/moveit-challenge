@@ -28,6 +28,25 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
       >
+        <div className={styles.verticalMenu}>
+          
+         
+            <img src="icons/logo-menu.svg"/>
+          
+          <div>
+            <span></span>
+            <a href="#">
+              <img src="/icons/home.svg" />
+            </a>
+          </div>
+          <div>
+            <span></span>
+            <a href="#">
+              <img src="/icons/medal.svg" />
+            </a>
+          </div>
+        </div>
+
         <div className={styles.container}>    
           <Head>
             <title>Início | move.it </title>
