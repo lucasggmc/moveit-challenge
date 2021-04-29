@@ -11,6 +11,7 @@ import { ChallengeBox } from "../components/ChallengeBox";
 import styles from '../styles/pages/Home.module.css';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { VerticalMenu } from '../components/VerticalMenu';
 
 interface HomeProps {
   level: number;
@@ -27,25 +28,9 @@ export default function Home(props: HomeProps) {
       level={props.level}
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
-      >
-        <div className={styles.verticalMenu}>
-          
-         
-            <img src="icons/logo-menu.svg"/>
-          
-          <div>
-            <span></span>
-            <a href="#">
-              <img src="/icons/home.svg" />
-            </a>
-          </div>
-          <div>
-            <span></span>
-            <a href="#">
-              <img src="/icons/medal.svg" />
-            </a>
-          </div>
-        </div>
+      >        
+
+        <VerticalMenu />
 
         <div className={styles.container}>    
           <Head>

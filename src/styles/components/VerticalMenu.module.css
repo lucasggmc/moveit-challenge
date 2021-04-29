@@ -1,0 +1,62 @@
+.verticalMenu {
+    position: absolute;
+    background: var(--white);
+    width: 112px;
+    height: 100%;
+}
+
+/* .verticalMenu > img {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    margin-top: 32px;
+} */
+
+.verticalMenu > div {    
+    position: fixed;
+    margin-top: 32px;
+
+}
+
+.verticalMenu > div > img {
+    cursor: pointer;    
+    margin-left: 32px;
+}
+
+.menuItems{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menuItems div { 
+    height: 56px;
+    display: flex;
+}
+
+.menuItems > div > span {    
+    border-right: 4px solid var(--white);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.menuItems > div > span[class*="isActive"] {    
+    border-right: 4px solid #5965E0;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+}
+
+.menuItems a {
+    display: flex;
+}
+
+.menuItems > div > a > img {
+    margin-left: 100%;    
+}
