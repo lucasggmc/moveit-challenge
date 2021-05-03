@@ -12,8 +12,8 @@ export function VerticalMenu(){
           
             <div className={styles.menuItems}>                                
                 <Tabs>
-                    <Tab src="/icons/home.svg"></Tab>
-                    <Tab src="/icons/medal.svg"></Tab>                    
+                    <Tab src="/icons/home.svg" href=""></Tab>
+                    <Tab src="/icons/medal.svg" href="leaderboard"></Tab>                    
                 </Tabs>
             </div>
         </div>

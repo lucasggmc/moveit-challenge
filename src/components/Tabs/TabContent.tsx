@@ -1,13 +1,15 @@
 import React, { useCallback } from "react"
+import Link from 'next/link';
 
 type Props = {  
   src: string
+  href: string
   index: number
   setSelectedTab: (index: number) => void
   selectedTab: number
 }
 
-const TabContent: React.FC<Props> = ({ src, setSelectedTab, selectedTab, index }) => {      
+const TabContent: React.FC<Props> = ({ src, href, setSelectedTab, selectedTab, index }) => {      
 
   const isActive = index === selectedTab;  
 
@@ -19,9 +21,15 @@ const TabContent: React.FC<Props> = ({ src, setSelectedTab, selectedTab, index }
     <div>    
       <span className={isActive ? 'isActive' : ''}></span>
 
-      <a href="#" onClick={onClick}>
+      {/* <a href={href} onClick={onClick}>
         <img src={src} />
-      </a>    
+      </a>     */}
+      <Link href={`/${href}`}>
+      <a onClick={onClick}>
+        <img src={src}  className={isActive ? 'isActive' : ''}/>
+      </a> 
+      </Link>
+      
     </div>
   )
 }

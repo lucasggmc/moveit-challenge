@@ -30,7 +30,7 @@ export default function Home(props: HomeProps) {
       challengesCompleted={props.challengesCompleted}
       >        
 
-        <VerticalMenu />
+        {/* <VerticalMenu /> */}
 
         <div className={styles.container}>    
           <Head>
