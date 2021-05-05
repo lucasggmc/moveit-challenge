@@ -62,5 +62,6 @@
 }
 
 .menuItems > div > a > img[class*="isActive"] {
-    filter: invert(.5) sepia(9) saturate(9) hue-rotate(205deg);
+    /* filter: invert(.5) sepia(9) saturate(9) hue-rotate(205deg); */
+    filter:invert(.9) sepia(9) saturate(70) hue-rotate(235deg);
 }

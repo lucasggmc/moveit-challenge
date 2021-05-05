@@ -1,0 +1,112 @@
+// .container {
+//     margin-left: 13.937rem; //223 px
+// }
+
+.containerLeader{
+
+h1 {
+    font-family: Inter, sans-serif;
+    color: var(--title);
+    padding-bottom: 2rem;
+}
+
+table {
+    // border: 0;
+    // border-spacing: 0px;   
+    
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+
+    thead {
+        padding-bottom: 1rem;
+
+        th{
+            font-family: Inter, sans-serif;
+            color: var(--text);
+            text-align: left;
+            padding-bottom: 1rem;
+            filter: brightness(1.5);
+        }
+    }    
+
+    tbody {
+        tr{           
+
+            height: 6rem;
+            width: 60rem;
+            
+            background-color: var(--white);            
+
+            .position {
+                font-family: Inter, sans-serif;
+                color: var(--text);
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .challengesAndExperience {
+                font-family: Inter, sans-serif;                
+                font-size: 16px;
+                text-align: left;
+
+                span {
+                    &:first-child{
+                        color: var(--blue);
+                        padding-right: 5px;
+                    }
+
+                    &:last-child {
+                        color: var(--text);
+                    }
+                }
+
+            }
+
+            // .experience {
+            //     font-family: Inter, sans-serif;
+            //     color: var(--text);
+            //     font-size: 16px;
+            //     text-align: center;
+            // }
+
+            td{
+                .profile {
+                    display: flex;
+                    align-items: center;
+
+                    .profileIMG{
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        border-radius: 50%;
+                        display: block;
+                    }       
+                    
+                    div {
+                        margin-left: 1rem;
+
+                        strong{
+                            font-family: Inter, sans-serif;
+                            color: var(--title);
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+
+                        p{
+                            font-size: 1rem;
+                            margin-top: 0.5rem;
+
+                            img{
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }      
+            }
+        }
+    }
+
+}
+
+
+
+}
